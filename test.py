@@ -1,4 +1,4 @@
-import sys
+https://goo.gl/ix9qBKimport sys
 sys.path.append('/home/administrator/Desktop/abhi')
 import areareac
 import areatri
