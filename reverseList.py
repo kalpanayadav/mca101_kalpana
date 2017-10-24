@@ -64,7 +64,7 @@ def listRev(list1,revSize = 0, count = 0):
     if len(list1) == 1:
         return list1[0]
     
-    :
+    else:
         print(count,revSize)
         revList[count] = list1[predecessor(revSize)]
         count = count + 1
