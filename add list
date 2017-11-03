@@ -1,0 +1,16 @@
+def listsum(list0):
+    '''
+    OBJECTIVE: TO ADD ELEMENTS OF LIST
+    INPUT: LIST
+    OUTPUT: SUM
+    '''
+    sum=0
+    if (list0[0:]==[]):
+        return 0
+    else:
+        sum=list0[0]+listsum(list0[1:])
+    return sum
+
+list1=[1,2,3,4]
+
+print('sum of the list= ',listsum(list1))
