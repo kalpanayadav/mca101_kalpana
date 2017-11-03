@@ -1,0 +1,18 @@
+def towerhanoi(discs,source,dest,spare):
+    '''
+    objective: implementing tower of hanoi
+    input parameter:
+                    discs
+                    source
+                    dest
+                    spare
+     approach: using recursion               
+    '''                
+                                
+    if discs==1:
+        print('move disc from',source,'to',dest)
+    else:
+        towerhanoi(discs-1,source,spare,dest)
+        towerhanoi(1,source,dest,spare)
+        towerhanoi(discs-1,spare,dest,source)
+towerhanoi(3,1,2,3)
