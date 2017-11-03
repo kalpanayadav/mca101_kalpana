@@ -1,0 +1,27 @@
+i=1
+def successor(num):
+    '''
+    objective: to return successor of the number
+    input    : n,number
+    return   : successor
+    '''
+    '''
+    approach : adding 1 to the number
+    '''
+    return num+1
+def predecessor(num):
+    '''
+    objective: to return predecessor of the number
+    input    : n,number
+    return   : predecessor
+    '''
+    '''
+    approach : using successor function
+    '''
+    global i
+
+    if(successor(i)==num):
+        return i
+    else:
+        i=successor(i)
+        return predecessor(num)
