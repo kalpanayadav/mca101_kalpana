@@ -1,0 +1,13 @@
+def arrange(list1,i=0,newlist=[]):
+    
+    if(len(list1)!=i):
+        if(type(list1[i])==int):
+            newlist.append(list1[i])
+            i=i+1
+            return arrange(list1,i,newlist)
+        if(type(list1[i])==list):
+            return arrange(list1[i],newlist)
+    else:
+        return newlist
+list1=[10,20,[30,40],50]
+print("new list",arrange(list1))
