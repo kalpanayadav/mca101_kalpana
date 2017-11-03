@@ -1,0 +1,44 @@
+def successor(num):
+    '''
+    objective: to return successor of the number
+    input    : n,number
+    return   : successor
+    '''
+    '''
+    approach : adding 1 to the number
+    '''
+    return num+1
+def predecessor(num,i=0):
+    '''
+    objective: to return predecessor of the number
+    input    : n,number
+    return   : predecessor
+    '''
+    '''
+    approach : using successor function
+    '''
+    
+    if(successor(i)==num):
+        return i
+    else:
+        i=successor(i)
+        return predecessor(num,i)
+def subtraction(num1,num2):
+    '''
+    objective: to subtract num2 from num1
+    input    : num1,num2
+    return   : subtracted value
+    approach : using predecessor function
+    '''
+    if(num1>=num2):
+        
+        if(num2>0):
+            return (subtraction((predecessor(num1,i=0)),num2-1))
+        else:
+            return num1
+    else :
+         if(num1>0):
+            return (-1*(subtraction((predecessor(num2,i=0)),num1-1)))
+         else:
+            return (-1*num2)
+
