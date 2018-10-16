@@ -1,13 +1,8 @@
 def increment(num):
     '''
         objective   :   to calculate successor of the provided number
-        input       :
-                        num : contains number whose successor has to be calculated
-
+        input       :   num : contains number whose successor has to be calculated
         output      :   successor of the provided number
-    '''
-
-    '''
         approach    :   adding 1 to given number
 
     '''
@@ -16,7 +11,7 @@ def increment(num):
 
 def predecessor(num,temp = 0):
     '''
-        objective   :   to calculate predecessor of given number
+        objective   :   to calculate predecessor of given number where number is num
         input       :
                         num : contains number
                         
