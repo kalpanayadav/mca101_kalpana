@@ -3,7 +3,6 @@ def selectsort(list1,count=0):
     if(count==len(list1)):
         return list1
     else:
-        
         a=minimum(list1[count:],0,len(list1[count:]))+count
         b=list1[count]
         list1[count]=list1[a]
