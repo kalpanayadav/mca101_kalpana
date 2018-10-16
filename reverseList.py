@@ -38,7 +38,7 @@ def predecessor(num,temp = 0):
     if num == increment(temp) :
         return temp
     else :
-        temp = increment(temp)
+        temp = increment(temp) // calling increment function
         return predecessor(num,temp)
 
     return temp
