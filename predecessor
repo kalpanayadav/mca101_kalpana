@@ -13,7 +13,7 @@ def predecessor(num):
     '''
     objective: to return predecessor of the number
     input    : n,number
-    return   : predecessor
+    return   : predecessor of n
     '''
     '''
     approach : using successor function
