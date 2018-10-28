@@ -3,7 +3,7 @@ def increement(n):
     objective: to return increement of the number
     input    : n,number
     return   : increement
-    approach : adding 1 to the number
+    approach : adding 1 to the number given
 
     '''
     return n+1
