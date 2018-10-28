@@ -1,6 +1,6 @@
 def increment(num):
     '''
-        objective   :   to calculate successor of the provided number
+        objective   :   to calculate successor of the provided number given
         input       :
                         num : contains number whose successor has to be calculated
 
