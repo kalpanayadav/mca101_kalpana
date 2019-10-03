@@ -1,26 +1,26 @@
 
-def selectsort(list1,count=0):
-    if(count==len(list1)):
+def selectsort(list1 , count=0):
+    if(count == len(list1)):
         return list1
     else:
         
-        a=minimum(list1[count:],0,len(list1[count:]))+count
-        b=list1[count]
+        a = minimum(list1[count:],0,len(list1[count:]))+count
+        b = list1[count]
         list1[count]=list1[a]
         list1[a]=b
-        count=count+1
+        count = count+1
         return selectsort(list1,count)
 
 def minimum(list1,pos,length):
     if(length-1>pos):
         if(list1[pos]<=list1[length-1]):
             mini=list1[pos]
-            length=length-1
+            length = length-1
             return minimum(list1,pos,length)
         else:
             return minimum(list1,pos+1,len(list1))
     else:
         return pos
 
-list1=[10,3,9,7,1]
+list1 = [10,3,9,7,1]
 selectsort(list1,count=0)
