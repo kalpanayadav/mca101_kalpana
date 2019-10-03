@@ -1,4 +1,4 @@
-def increement(n):
+def increement(num):
     '''
     objective: to return increement of the number
     input    : n,number
@@ -6,9 +6,9 @@ def increement(n):
     approach : adding 1 to the number
 
     '''
-    return n+1
+    return num+1
 
-def add(n,m):
+def add(num,m):
     '''
     objective: to return sum of the number
     input    : n number,m no to be added
@@ -17,8 +17,8 @@ def add(n,m):
 
     '''
 
-    sum=n
+    sum=num
     if m==0:
-        return n
+        return num
     else:
-        return(add(increement(n),m-1))
+        return(add(increement(num),m-1))
