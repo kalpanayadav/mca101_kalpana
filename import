@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/administrator/Desktop/mca101')
+sys.path.append(' /home/administrator/Desktop/mca101')
 import kalpana
 def main():
     '''
@@ -13,15 +13,15 @@ def main():
     '''
     print('1. area of rectangle')
     print('2. area of triangle')
-    c=int(input('enter choice'))
-    if c==1:
+    c= int(input('enter choice'))
+    if c==1 :
        l=int(input('enter length'))
        b=int(input('enter breadth'))
        print('area of rectangle',kalpana.areaRectangle(l,b))
-    elif c==2:
+    elif c==2 :
        b=int(input('enter base'))
        h=int(input('enter height'))
        print('area of triangle',kalpana.areaTriangle(b,h))
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
